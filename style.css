@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background: #faeed1;
+  min-height: 100vh;
+  padding: 50px 0;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1400px;
+  padding: 0 32px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 7px 6px 8px #ab9e9e;
+}
+
+.card {
+  background: #777;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 36px;
+  width: 100%;
+  max-width: 100%;
+  flex: 1 0 100%;
+}
+@media screen and (min-width: 768px) {
+  .card {
+    max-width: 50%;
+    width: 50%;
+    flex: 1 0 50%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .card {
+    max-width: 33.333%;
+    width: 33.33%;
+    flex: 1 0 33.33%;
+  }
+}
+@media screen and (min-width: 1220px) {
+  .card {
+    max-width: 25%;
+    width: 25%;
+    flex: 1 0 25%;
+  }
+}
+.card img {
+  width: 50px;
+  position: relative;
+  filter: invert(1);
+  left: 15px;
+}
+.card .img-wrap {
+  position: relative;
+  margin-bottom: 50px;
+}
+.card .img-wrap::before {
+  content: "";
+  width: 35px;
+  height: 35px;
+  background-color: #999;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.card h3 {
+  margin-bottom: 50px;
+  font-size: 45px;
+  font-family: "Big Shoulders Display", cursive;
+}
+.card p {
+  margin-bottom: 40px;
+  font-size: 25px;
+  line-height: 1.3;
+  flex-grow: 1;
+  font-family: "Lexend Deca", sans-serif;
+}
+.card button {
+  background-color: white;
+  display: inline-block;
+  width: fit-content;
+  padding: 20px 40px;
+  border: none;
+  border-radius: 25px;
+  font-size: 22px;
+  letter-spacing: 2px;
+  font-family: "Lexend Deca", sans-serif;
+}
+.card button:hover {
+  color: red;
+  box-shadow: 2px 2px 3px #ab9e9e;
+}
+
+.card-orange {
+  background-color: #e28525;
+}
+.card-orange button {
+  color: #e28525;
+  border: 4px solid #bb3e03;
+}
+
+.card-blue {
+  background-color: #016972;
+}
+.card-blue button {
+  color: #016972;
+  border: 4px solid #8dab7f;
+}
+
+.card-green {
+  background-color: #00403f;
+}
+.card-green button {
+  color: #00403f;
+  border: 4px solid #52b788;
+}
+
+.card-grey {
+  background-color: #777;
+}
+.card-grey button {
+  color: #3c3a3a;
+  border: 4px solid #315d82;
+}
+
+/*# sourceMappingURL=style.css.map */
